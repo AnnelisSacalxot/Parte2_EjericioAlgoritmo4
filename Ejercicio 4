@@ -1,0 +1,27 @@
+4. Hallar la persona de mayor y menor edad, sabiendo que se leen datos correspondientes a 20 muestras.
+
+Algoritmo Mayor_Menor_Edad
+	Definir i, N, edad , mar, mer Como Entero
+	mar <- 0
+	mer <-  0
+	i <- 1
+	edad <- 20
+	Mientras i <= edad Hacer
+		Escribir "Ingrese las edades:"
+		Leer N
+		Si i == 1 Entonces
+			mar <-  N
+			men <- N
+		SiNo
+			Si N > mar Entonces
+				mar <- N
+			FinSi
+			Si N < mer Entonces
+				mer <- N
+			FinSi
+		FinSi
+		i <- edad
+	FinMientras
+	Escribir "La edad mayor es:", mar
+	Escribir "La edad menor es:", mer
+FinAlgoritmo
